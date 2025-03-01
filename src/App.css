@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  height: 100vh;
+  width: 100%;
+  background-color: #fefae0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #e9edc9;
+  width: 200px;
+}
+
+.navbar-link {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: #ccd5ae;
+}
+
+.active {
+  background-color: #ccd5ae;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 100px;
+}
+
+.filterBox {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.tableWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+select, input {
+  background-color: #fefae0;
+  width: 200px;
+  border: 2px solid #d4a373;
+  border-radius: 20px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+label {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.header {
+  display: flex;
+  width: 1000px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.header div {
+  width: 20%;
+  text-align: center;
+}
+
+.table {
+  width: 1000px;
+}
+
+.record {
+  display: flex;
+  width: 1000px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 10px;
+  border: 3px solid #d4a373;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell {
+  width: 20%;
+  text-align: center;
+}
+
+.record button {
+  background-color: #d4a373;
+  border: none;
+  width: 120px;
+  height: 28px;
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form button {
+  margin-top: 100px;
+  background-color: #d4a373;
+  border: none;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.successInfo {
+  font-size: 50px;
+  text-align: center;
+}
+
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .datepickerContaier div {
+  display: block;
+} */
+
+form p {
+  color: red;
+}
+
+
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #e9edc9;
+    z-index: 1000;
+  }
+
+  .navbar-link {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    width: 50%;
+  }
+
+  .filterBox {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .header {
+    display: flex;
+    width: 100vw;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+
+  .table {
+    width: 100vw;
+  }
+  
+  .record {
+    display: flex;
+    width: 100vw;
+    height: 40px;
+    font-size: 12px;
+    margin-top: 10px;
+    border: 3px solid #d4a373;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .record button {
+    background-color: #d4a373;
+    border: none;
+    width: 40px;
+    height: 28px;
+    border-radius: 10px;
+  }
+}
